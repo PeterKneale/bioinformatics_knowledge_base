@@ -1,0 +1,88 @@
+site_name: Bioinformatics Knowledge Base
+site_description: Reference documentation for NGS tools and file formats
+repo_url: https://github.com/PeterKneale/bioinformatics_knowledge_base
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Processes:
+      - Index: processes/INDEX.md
+      - Sequencing: processes/sequencing.md
+      - Alignment: processes/alignment.md
+  - Tools:
+      - Index: tools/INDEX.md
+      - Alignment:
+          - BWA: tools/bwa.md
+          - Bowtie2: tools/bowtie2.md
+          - HISAT2: tools/hisat2.md
+          - STAR: tools/star.md
+          - Minimap2: tools/minimap2.md
+      - Variant Calling:
+          - GATK: tools/gatk.md
+          - bcftools: tools/bcftools.md
+          - FreeBayes: tools/freebayes.md
+          - VCFtools: tools/vcftools.md
+      - Quantification:
+          - featureCounts: tools/featurecounts.md
+          - HTSeq-count: tools/htseq-count.md
+          - Kallisto: tools/kallisto.md
+          - Salmon: tools/salmon.md
+      - QC & Trimming:
+          - FastQC: tools/fastqc.md
+          - MultiQC: tools/multiqc.md
+          - fastp: tools/fastp.md
+          - Cutadapt: tools/cutadapt.md
+          - Trimmomatic: tools/trimmomatic.md
+      - Alignment Processing:
+          - samtools: tools/samtools.md
+          - Picard: tools/picard.md
+      - Coverage & Visualization:
+          - deepTools: tools/deeptools.md
+          - bedtools: tools/bedtools.md
+      - Sequence Search:
+          - BLAST: tools/blast.md
+          - HMMER: tools/hmmer.md
+          - MUSCLE: tools/muscle.md
+          - MAFFT: tools/mafft.md
+      - Utilities:
+          - SeqKit: tools/seqkit.md
+          - Tabix: tools/tabix.md
+          - PLINK: tools/plink.md
+  - Formats:
+      - Index: formats/INDEX.md
+      - Sequence: 
+          - FASTA: formats/fasta.md
+          - FASTQ: formats/fastq.md
+      - Alignment:
+          - SAM: formats/sam.md
+          - BAM: formats/bam.md
+          - CRAM: formats/cram.md
+      - Variants:
+          - VCF: formats/vcf.md
+          - BCF: formats/bcf.md
+      - Annotation:
+          - BED: formats/bed.md
+          - GFF/GTF: formats/gff-gtf.md
+      - Coverage:
+          - BedGraph: formats/bedgraph.md
+          - Wig: formats/wig.md
+          - BigWig: formats/bigwig.md
+          - BigBed: formats/bigbed.md
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - codehilite
+  - toc:
+      permalink: true
