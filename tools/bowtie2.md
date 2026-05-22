@@ -16,11 +16,11 @@ conda install -c bioconda bowtie2
 
 ## Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `bowtie2-build` | Build index from reference FASTA |
-| `bowtie2` | Align reads to indexed reference |
-| `bowtie2-inspect` | Display index information |
+| Command           | Description                      |
+| ----------------- | -------------------------------- |
+| `bowtie2-build`   | Build index from reference FASTA |
+| `bowtie2`         | Align reads to indexed reference |
+| `bowtie2-inspect` | Display index information        |
 
 ## Usage Examples
 

@@ -25,12 +25,12 @@ chr1    2000    2500    0.0
 chr1    2500    3000    2.1
 ```
 
-| Column | Description |
-|--------|-------------|
-| 1 | Chromosome |
-| 2 | Start (0-based) |
-| 3 | End (exclusive) |
-| 4 | Data value (float) |
+| Column | Description        |
+| ------ | ------------------ |
+| 1      | Chromosome         |
+| 2      | Start (0-based)    |
+| 3      | End (exclusive)    |
+| 4      | Data value (float) |
 
 ## Coordinate System
 
@@ -63,30 +63,30 @@ bedGraphToBigWig coverage.bedgraph chrom.sizes coverage.bw
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
+| Tool                                           | Context               |
+| ---------------------------------------------- | --------------------- |
 | [bedtools genomecov -bg](../tools/bedtools.md) | Coverage from BAM/BED |
-| Various signal processing tools | Normalised scores |
+| Various signal processing tools                | Normalised scores     |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| UCSC `bedGraphToBigWig` | Convert to BigWig |
-| [tabix](../tools/tabix.md) | Region queries |
+| Tool                             | Purpose             |
+| -------------------------------- | ------------------- |
+| UCSC `bedGraphToBigWig`          | Convert to BigWig   |
+| [tabix](../tools/tabix.md)       | Region queries      |
 | [bedtools](../tools/bedtools.md) | Interval operations |
-| Genome browsers | Track display |
+| Genome browsers                  | Track display       |
 
 ## BedGraph vs BigWig
 
-| Property | BedGraph | BigWig |
-|----------|----------|--------|
-| Type | Text | Binary |
-| Indexed | Via tabix | Self-indexed |
-| Random access | With tabix | Built-in |
-| File size | Larger | Smaller |
-| Editable | Yes | No |
-| Browser display | Must convert | Direct |
+| Property        | BedGraph     | BigWig       |
+| --------------- | ------------ | ------------ |
+| Type            | Text         | Binary       |
+| Indexed         | Via tabix    | Self-indexed |
+| Random access   | With tabix   | Built-in     |
+| File size       | Larger       | Smaller      |
+| Editable        | Yes          | No           |
+| Browser display | Must convert | Direct       |
 
 ## See Also
 

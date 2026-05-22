@@ -18,21 +18,21 @@ brew install bedtools
 
 ## Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `intersect` | Find overlapping intervals between two files |
-| `subtract` | Remove intervals overlapping another file |
-| `merge` | Merge overlapping intervals |
-| `complement` | Return regions NOT covered |
-| `coverage` | Compute depth and breadth of coverage |
-| `genomecov` | Genome-wide coverage histogram/BedGraph |
-| `closest` | Find nearest feature |
-| `window` | Find features within a window |
-| `getfasta` | Extract FASTA sequences for BED intervals |
-| `sort` | Sort BED by chromosome and position |
-| `flank` | Create flanking intervals |
-| `slop` | Extend intervals by a fixed size |
-| `multicov` | Count alignments across multiple BAMs |
+| Command      | Description                                  |
+| ------------ | -------------------------------------------- |
+| `intersect`  | Find overlapping intervals between two files |
+| `subtract`   | Remove intervals overlapping another file    |
+| `merge`      | Merge overlapping intervals                  |
+| `complement` | Return regions NOT covered                   |
+| `coverage`   | Compute depth and breadth of coverage        |
+| `genomecov`  | Genome-wide coverage histogram/BedGraph      |
+| `closest`    | Find nearest feature                         |
+| `window`     | Find features within a window                |
+| `getfasta`   | Extract FASTA sequences for BED intervals    |
+| `sort`       | Sort BED by chromosome and position          |
+| `flank`      | Create flanking intervals                    |
+| `slop`       | Extend intervals by a fixed size             |
+| `multicov`   | Count alignments across multiple BAMs        |
 
 ## Usage Examples
 

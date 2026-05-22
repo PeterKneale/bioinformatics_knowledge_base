@@ -12,17 +12,17 @@ Describes genomic features (genes, transcripts, exons, CDS) with hierarchical re
 
 Nine tab-delimited columns:
 
-| Col | Field | Description |
-|-----|-------|-------------|
-| 1 | seqid | Chromosome/scaffold |
-| 2 | source | Annotation source (e.g., "ensembl") |
-| 3 | type | Feature type (gene, mRNA, exon, CDS) |
-| 4 | start | Start position (1-based, inclusive) |
-| 5 | end | End position (1-based, inclusive) |
-| 6 | score | Score (or `.`) |
-| 7 | strand | `+`, `-`, or `.` |
-| 8 | phase | Reading frame for CDS (0, 1, 2, or `.`) |
-| 9 | attributes | Semicolon-separated key=value pairs |
+| Col | Field      | Description                             |
+| --- | ---------- | --------------------------------------- |
+| 1   | seqid      | Chromosome/scaffold                     |
+| 2   | source     | Annotation source (e.g., "ensembl")     |
+| 3   | type       | Feature type (gene, mRNA, exon, CDS)    |
+| 4   | start      | Start position (1-based, inclusive)     |
+| 5   | end        | End position (1-based, inclusive)       |
+| 6   | score      | Score (or `.`)                          |
+| 7   | strand     | `+`, `-`, or `.`                        |
+| 8   | phase      | Reading frame for CDS (0, 1, 2, or `.`) |
+| 9   | attributes | Semicolon-separated key=value pairs     |
 
 ### GFF3 Example
 
@@ -46,13 +46,13 @@ chr1	ensembl	exon	13221	14409	.	+	.	gene_id "ENSG00000223972"; transcript_id "EN
 
 ## GFF3 vs GTF Differences
 
-| Feature | GFF3 | GTF (GFF2.5) |
-|---------|------|--------------|
-| Hierarchy | Explicit `ID`/`Parent` | Implicit via `gene_id`/`transcript_id` |
-| Attributes | `key=value` | `key "value";` |
-| Multi-value | `Parent=id1,id2` | Not supported |
-| Directives | `##gff-version 3`, `###` | None |
-| Feature types | Ontology-based (SO) | Fixed set (gene, transcript, exon, CDS) |
+| Feature       | GFF3                     | GTF (GFF2.5)                            |
+| ------------- | ------------------------ | --------------------------------------- |
+| Hierarchy     | Explicit `ID`/`Parent`   | Implicit via `gene_id`/`transcript_id`  |
+| Attributes    | `key=value`              | `key "value";`                          |
+| Multi-value   | `Parent=id1,id2`         | Not supported                           |
+| Directives    | `##gff-version 3`, `###` | None                                    |
+| Feature types | Ontology-based (SO)      | Fixed set (gene, transcript, exon, CDS) |
 
 ## Indexing
 
@@ -71,30 +71,30 @@ tabix annotation.gff3.gz chr1:11000-15000
 
 GFF/GTF uses **1-based, inclusive** coordinates (same as VCF, different from BED).
 
-| Format | chr1, first 100 bases |
-|--------|----------------------|
-| GFF/GTF | `chr1 ... 1 ... 100` |
-| BED | `chr1 0 100` |
+| Format  | chr1, first 100 bases |
+| ------- | --------------------- |
+| GFF/GTF | `chr1 ... 1 ... 100`  |
+| BED     | `chr1 0 100`          |
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
-| Genome annotation databases | Ensembl, GENCODE, RefSeq, UCSC |
-| Gene prediction tools | Augustus, GeneMark |
+| Tool                                         | Context                         |
+| -------------------------------------------- | ------------------------------- |
+| Genome annotation databases                  | Ensembl, GENCODE, RefSeq, UCSC  |
+| Gene prediction tools                        | Augustus, GeneMark              |
 | [HISAT2 extract scripts](../tools/hisat2.md) | Splice site extraction from GTF |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| [STAR](../tools/star.md) | Splice junction annotation for index |
-| [HISAT2](../tools/hisat2.md) | Splice site extraction |
-| [featureCounts](../tools/featurecounts.md) | Gene/exon counting |
-| [HTSeq-count](../tools/htseq-count.md) | Gene counting |
-| [bedtools](../tools/bedtools.md) | Interval operations |
-| [tabix](../tools/tabix.md) | Region queries |
-| [Kallisto](../tools/kallisto.md) | Genome-BAM output |
+| Tool                                       | Purpose                              |
+| ------------------------------------------ | ------------------------------------ |
+| [STAR](../tools/star.md)                   | Splice junction annotation for index |
+| [HISAT2](../tools/hisat2.md)               | Splice site extraction               |
+| [featureCounts](../tools/featurecounts.md) | Gene/exon counting                   |
+| [HTSeq-count](../tools/htseq-count.md)     | Gene counting                        |
+| [bedtools](../tools/bedtools.md)           | Interval operations                  |
+| [tabix](../tools/tabix.md)                 | Region queries                       |
+| [Kallisto](../tools/kallisto.md)           | Genome-BAM output                    |
 
 ## Common Operations
 

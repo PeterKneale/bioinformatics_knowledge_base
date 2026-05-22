@@ -18,13 +18,13 @@ brew install mafft
 
 ## Algorithm Strategies
 
-| Strategy | Speed | Accuracy | Use Case |
-|----------|-------|----------|----------|
-| `--auto` | Varies | Best auto-selected | Default recommendation |
-| `FFT-NS-2` | Fast | Good | Large datasets (>2000 seq) |
-| `L-INS-i` | Slow | Highest | Small datasets, one alignable domain |
-| `G-INS-i` | Slow | High | Global homology |
-| `E-INS-i` | Slow | High | Multiple conserved domains with gaps |
+| Strategy   | Speed  | Accuracy           | Use Case                             |
+| ---------- | ------ | ------------------ | ------------------------------------ |
+| `--auto`   | Varies | Best auto-selected | Default recommendation               |
+| `FFT-NS-2` | Fast   | Good               | Large datasets (>2000 seq)           |
+| `L-INS-i`  | Slow   | Highest            | Small datasets, one alignable domain |
+| `G-INS-i`  | Slow   | High               | Global homology                      |
+| `E-INS-i`  | Slow   | High               | Multiple conserved domains with gaps |
 
 ## Usage Examples
 

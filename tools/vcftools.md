@@ -65,28 +65,28 @@ vcftools --gzvcf variants.vcf.gz --site-mean-depth --out depth
 
 ## Key Options
 
-| Option | Description |
-|--------|-------------|
-| `--vcf FILE` | Input VCF |
-| `--gzvcf FILE` | Input bgzipped VCF |
-| `--recode` | Output filtered VCF |
-| `--out PREFIX` | Output file prefix |
-| `--chr` | Restrict to chromosome |
-| `--minQ` | Minimum quality |
-| `--min-meanDP` | Minimum mean depth |
-| `--maf` | Minimum minor allele frequency |
-| `--max-missing` | Max missingness (0-1) |
-| `--keep FILE` | Keep samples in file |
-| `--remove FILE` | Remove samples in file |
-| `--remove-indels` | Keep only SNPs |
+| Option            | Description                    |
+| ----------------- | ------------------------------ |
+| `--vcf FILE`      | Input VCF                      |
+| `--gzvcf FILE`    | Input bgzipped VCF             |
+| `--recode`        | Output filtered VCF            |
+| `--out PREFIX`    | Output file prefix             |
+| `--chr`           | Restrict to chromosome         |
+| `--minQ`          | Minimum quality                |
+| `--min-meanDP`    | Minimum mean depth             |
+| `--maf`           | Minimum minor allele frequency |
+| `--max-missing`   | Max missingness (0-1)          |
+| `--keep FILE`     | Keep samples in file           |
+| `--remove FILE`   | Remove samples in file         |
+| `--remove-indels` | Keep only SNPs                 |
 
 ## Formats Consumed/Produced
 
-| Format | Description |
-|--------|-------------|
-| [VCF](../formats/vcf.md) | Input/output variants |
-| PLINK (`.ped`/`.map`) | Converted genotype data |
-| Tab-delimited | Statistics outputs |
+| Format                   | Description             |
+| ------------------------ | ----------------------- |
+| [VCF](../formats/vcf.md) | Input/output variants   |
+| PLINK (`.ped`/`.map`)    | Converted genotype data |
+| Tab-delimited            | Statistics outputs      |
 
 ## See Also
 

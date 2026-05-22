@@ -18,18 +18,18 @@ pip install deeptools
 
 ## Key Tools
 
-| Tool | Description |
-|------|-------------|
-| `bamCoverage` | BAM → normalised BigWig |
-| `bamCompare` | Log2 ratio of two BAM files (ChIP/input) |
-| `computeMatrix` | Score matrix around features for plotting |
-| `plotHeatmap` | Heatmap from computeMatrix output |
-| `plotProfile` | Average profile plot from computeMatrix output |
-| `multiBamSummary` | Genome-wide read count matrix |
-| `plotCorrelation` | Sample correlation heatmap |
-| `plotPCA` | PCA of samples |
-| `plotFingerprint` | Assess ChIP enrichment |
-| `alignmentSieve` | Filter BAM by fragment size, MAPQ |
+| Tool              | Description                                    |
+| ----------------- | ---------------------------------------------- |
+| `bamCoverage`     | BAM → normalised BigWig                        |
+| `bamCompare`      | Log2 ratio of two BAM files (ChIP/input)       |
+| `computeMatrix`   | Score matrix around features for plotting      |
+| `plotHeatmap`     | Heatmap from computeMatrix output              |
+| `plotProfile`     | Average profile plot from computeMatrix output |
+| `multiBamSummary` | Genome-wide read count matrix                  |
+| `plotCorrelation` | Sample correlation heatmap                     |
+| `plotPCA`         | PCA of samples                                 |
+| `plotFingerprint` | Assess ChIP enrichment                         |
+| `alignmentSieve`  | Filter BAM by fragment size, MAPQ              |
 
 ## Usage Examples
 

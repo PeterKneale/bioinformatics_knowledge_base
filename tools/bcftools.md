@@ -18,20 +18,20 @@ brew install bcftools
 
 ## Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `mpileup` | Generate genotype likelihoods from BAM |
-| `call` | SNP/indel calling from mpileup output |
-| `filter` | Filter variants by expression |
-| `view` | Subset, convert, filter VCF/BCF |
-| `norm` | Left-align and normalise indels |
-| `merge` | Merge multiple VCF/BCF files |
-| `isec` | Intersect VCF files |
-| `annotate` | Add annotations from another file |
-| `consensus` | Apply variants to reference FASTA |
-| `stats` | VCF statistics |
-| `query` | Extract fields from VCF |
-| `index` | Index VCF/BCF files |
+| Command     | Description                            |
+| ----------- | -------------------------------------- |
+| `mpileup`   | Generate genotype likelihoods from BAM |
+| `call`      | SNP/indel calling from mpileup output  |
+| `filter`    | Filter variants by expression          |
+| `view`      | Subset, convert, filter VCF/BCF        |
+| `norm`      | Left-align and normalise indels        |
+| `merge`     | Merge multiple VCF/BCF files           |
+| `isec`      | Intersect VCF files                    |
+| `annotate`  | Add annotations from another file      |
+| `consensus` | Apply variants to reference FASTA      |
+| `stats`     | VCF statistics                         |
+| `query`     | Extract fields from VCF                |
+| `index`     | Index VCF/BCF files                    |
 
 ## Usage Examples
 

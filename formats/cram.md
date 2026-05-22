@@ -82,27 +82,27 @@ samtools view -T reference.fa file.cram
 
 ## Compression Comparison
 
-| Format | Relative Size | Random Access | Reference Needed |
-|--------|--------------|---------------|------------------|
-| SAM | 100% (baseline) | No | No |
-| BAM | ~25-30% | Yes (.bai/.csi) | No |
-| CRAM | ~15-20% | Yes (.crai) | Yes (for decode) |
+| Format | Relative Size   | Random Access   | Reference Needed |
+| ------ | --------------- | --------------- | ---------------- |
+| SAM    | 100% (baseline) | No              | No               |
+| BAM    | ~25-30%         | Yes (.bai/.csi) | No               |
+| CRAM   | ~15-20%         | Yes (.crai)     | Yes (for decode) |
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
+| Tool                                     | Context                   |
+| ---------------------------------------- | ------------------------- |
 | [samtools view -C](../tools/samtools.md) | BAM/SAM → CRAM conversion |
-| [samtools sort](../tools/samtools.md) | Direct CRAM output |
+| [samtools sort](../tools/samtools.md)    | Direct CRAM output        |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
+| Tool                             | Purpose                  |
+| -------------------------------- | ------------------------ |
 | [samtools](../tools/samtools.md) | All alignment operations |
-| [GATK](../tools/gatk.md) | Variant calling |
-| [Picard](../tools/picard.md) | Metrics and validation |
-| [IGV](https://igv.org/) | Visualisation |
+| [GATK](../tools/gatk.md)         | Variant calling          |
+| [Picard](../tools/picard.md)     | Metrics and validation   |
+| [IGV](https://igv.org/)          | Visualisation            |
 
 ## When to Use CRAM
 

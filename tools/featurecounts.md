@@ -16,18 +16,18 @@ conda install -c bioconda subread
 
 ## Key Options
 
-| Option | Description |
-|--------|-------------|
-| `-a` | Annotation file (GTF/GFF) |
-| `-o` | Output count file |
-| `-t` | Feature type (default: exon) |
-| `-g` | Attribute for grouping (default: gene_id) |
-| `-p` | Paired-end mode (count fragments not reads) |
-| `--countReadPairs` | Count read pairs (PE) |
-| `-s` | Strandedness (0=unstranded, 1=stranded, 2=reversely stranded) |
-| `-T` | Number of threads |
-| `-M` | Count multi-mapping reads |
-| `-O` | Allow multi-overlap |
+| Option             | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| `-a`               | Annotation file (GTF/GFF)                                     |
+| `-o`               | Output count file                                             |
+| `-t`               | Feature type (default: exon)                                  |
+| `-g`               | Attribute for grouping (default: gene_id)                     |
+| `-p`               | Paired-end mode (count fragments not reads)                   |
+| `--countReadPairs` | Count read pairs (PE)                                         |
+| `-s`               | Strandedness (0=unstranded, 1=stranded, 2=reversely stranded) |
+| `-T`               | Number of threads                                             |
+| `-M`               | Count multi-mapping reads                                     |
+| `-O`               | Allow multi-overlap                                           |
 
 ## Usage Examples
 

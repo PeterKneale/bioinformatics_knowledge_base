@@ -16,18 +16,18 @@ conda install -c bioconda picard
 
 ## Key Tools
 
-| Tool | Description |
-|------|-------------|
-| `MarkDuplicates` | Mark/remove PCR and optical duplicates |
-| `CollectAlignmentSummaryMetrics` | Alignment QC metrics |
-| `CollectInsertSizeMetrics` | Insert size distribution |
-| `CollectWgsMetrics` | Whole-genome coverage metrics |
-| `SortSam` | Sort SAM/BAM by coordinate or name |
-| `MergeSamFiles` | Merge multiple BAM files |
-| `AddOrReplaceReadGroups` | Add/fix read group headers |
-| `CreateSequenceDictionary` | Create .dict for reference FASTA |
-| `ValidateSamFile` | Validate BAM file correctness |
-| `CollectGcBiasMetrics` | GC bias analysis |
+| Tool                             | Description                            |
+| -------------------------------- | -------------------------------------- |
+| `MarkDuplicates`                 | Mark/remove PCR and optical duplicates |
+| `CollectAlignmentSummaryMetrics` | Alignment QC metrics                   |
+| `CollectInsertSizeMetrics`       | Insert size distribution               |
+| `CollectWgsMetrics`              | Whole-genome coverage metrics          |
+| `SortSam`                        | Sort SAM/BAM by coordinate or name     |
+| `MergeSamFiles`                  | Merge multiple BAM files               |
+| `AddOrReplaceReadGroups`         | Add/fix read group headers             |
+| `CreateSequenceDictionary`       | Create .dict for reference FASTA       |
+| `ValidateSamFile`                | Validate BAM file correctness          |
+| `CollectGcBiasMetrics`           | GC bias analysis                       |
 
 ## Usage Examples
 

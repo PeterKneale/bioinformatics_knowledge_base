@@ -49,18 +49,18 @@ tabix --csi variants.vcf.gz
 
 ## Key Options
 
-| Option | Description |
-|--------|-------------|
-| `-p FORMAT` | Preset: vcf, bed, gff, sam |
-| `-h` | Include header in output |
-| `-R FILE` | Restrict to regions in BED file |
-| `-l` | List sequence names |
-| `--csi` | Use CSI index (for large genomes) |
-| `-s INT` | Column for sequence name |
-| `-b INT` | Column for region start |
-| `-e INT` | Column for region end |
-| `-S INT` | Skip header lines |
-| `-c CHAR` | Comment character |
+| Option      | Description                       |
+| ----------- | --------------------------------- |
+| `-p FORMAT` | Preset: vcf, bed, gff, sam        |
+| `-h`        | Include header in output          |
+| `-R FILE`   | Restrict to regions in BED file   |
+| `-l`        | List sequence names               |
+| `--csi`     | Use CSI index (for large genomes) |
+| `-s INT`    | Column for sequence name          |
+| `-b INT`    | Column for region start           |
+| `-e INT`    | Column for region end             |
+| `-S INT`    | Skip header lines                 |
+| `-c CHAR`   | Comment character                 |
 
 ## bgzip
 
@@ -79,19 +79,19 @@ bgzip -c file.vcf > file.vcf.gz
 
 ## Index Types
 
-| Index | Extension | Use Case |
-|-------|-----------|----------|
-| TBI | `.tbi` | Default tabix index |
-| CSI | `.csi` | Large chromosomes (>512Mb), supports deeper binning |
+| Index | Extension | Use Case                                            |
+| ----- | --------- | --------------------------------------------------- |
+| TBI   | `.tbi`    | Default tabix index                                 |
+| CSI   | `.csi`    | Large chromosomes (>512Mb), supports deeper binning |
 
 ## Formats Indexed
 
-| Format | Preset |
-|--------|--------|
-| [VCF](../formats/vcf.md) | `-p vcf` |
-| [BED](../formats/bed.md) | `-p bed` |
+| Format                       | Preset   |
+| ---------------------------- | -------- |
+| [VCF](../formats/vcf.md)     | `-p vcf` |
+| [BED](../formats/bed.md)     | `-p bed` |
 | [GFF](../formats/gff-gtf.md) | `-p gff` |
-| [SAM](../formats/sam.md) | `-p sam` |
+| [SAM](../formats/sam.md)     | `-p sam` |
 
 ## See Also
 

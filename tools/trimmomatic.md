@@ -16,16 +16,16 @@ conda install -c bioconda trimmomatic
 
 ## Trimming Steps
 
-| Step | Description |
-|------|-------------|
-| `ILLUMINACLIP` | Remove adapter sequences |
+| Step            | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| `ILLUMINACLIP`  | Remove adapter sequences                                  |
 | `SLIDINGWINDOW` | Trim once average quality in window drops below threshold |
-| `LEADING` | Remove low-quality bases from start |
-| `TRAILING` | Remove low-quality bases from end |
-| `MINLEN` | Drop reads shorter than threshold |
-| `CROP` | Cut read to specified length |
-| `HEADCROP` | Remove N bases from start |
-| `AVGQUAL` | Drop reads below average quality |
+| `LEADING`       | Remove low-quality bases from start                       |
+| `TRAILING`      | Remove low-quality bases from end                         |
+| `MINLEN`        | Drop reads shorter than threshold                         |
+| `CROP`          | Cut read to specified length                              |
+| `HEADCROP`      | Remove N bases from start                                 |
+| `AVGQUAL`       | Drop reads below average quality                          |
 
 ## Usage Examples
 

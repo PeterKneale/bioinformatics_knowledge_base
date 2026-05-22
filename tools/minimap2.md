@@ -18,15 +18,15 @@ brew install minimap2
 
 ## Key Presets
 
-| Preset | Use Case |
-|--------|----------|
-| `map-ont` | Oxford Nanopore genomic reads |
-| `map-pb` | PacBio CLR genomic reads |
-| `map-hifi` | PacBio HiFi/CCS reads |
-| `splice` | Long-read RNA-seq (cDNA/direct RNA) |
-| `asm5` | Assembly-to-assembly (divergence <5%) |
-| `asm20` | Assembly-to-assembly (divergence <20%) |
-| `sr` | Short reads (Illumina) |
+| Preset     | Use Case                               |
+| ---------- | -------------------------------------- |
+| `map-ont`  | Oxford Nanopore genomic reads          |
+| `map-pb`   | PacBio CLR genomic reads               |
+| `map-hifi` | PacBio HiFi/CCS reads                  |
+| `splice`   | Long-read RNA-seq (cDNA/direct RNA)    |
+| `asm5`     | Assembly-to-assembly (divergence <5%)  |
+| `asm20`    | Assembly-to-assembly (divergence <20%) |
+| `sr`       | Short reads (Illumina)                 |
 
 ## Usage Examples
 

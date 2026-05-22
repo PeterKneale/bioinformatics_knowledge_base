@@ -18,17 +18,17 @@ brew install fastqc
 
 ## QC Modules
 
-| Module | What it checks |
-|--------|---------------|
-| Per base sequence quality | Quality scores across all bases |
-| Per sequence quality scores | Distribution of mean quality per read |
-| Per base sequence content | A/T/G/C proportion per position |
-| Per sequence GC content | GC distribution vs theoretical |
-| Per base N content | Uncalled bases per position |
-| Sequence length distribution | Read length distribution |
-| Sequence duplication levels | Library complexity |
-| Overrepresented sequences | Contaminants / adapters |
-| Adapter content | Known adapter sequence presence |
+| Module                       | What it checks                        |
+| ---------------------------- | ------------------------------------- |
+| Per base sequence quality    | Quality scores across all bases       |
+| Per sequence quality scores  | Distribution of mean quality per read |
+| Per base sequence content    | A/T/G/C proportion per position       |
+| Per sequence GC content      | GC distribution vs theoretical        |
+| Per base N content           | Uncalled bases per position           |
+| Sequence length distribution | Read length distribution              |
+| Sequence duplication levels  | Library complexity                    |
+| Overrepresented sequences    | Contaminants / adapters               |
+| Adapter content              | Known adapter sequence presence       |
 
 ## Usage Examples
 

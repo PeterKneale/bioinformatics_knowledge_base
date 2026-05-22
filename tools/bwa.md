@@ -18,12 +18,12 @@ brew install bwa
 
 ## Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `index` | Build BWT index from reference FASTA |
-| `mem` | Align reads (preferred for 70bp+) |
-| `aln` | Align short reads (<70bp, legacy) |
-| `samse/sampe` | Generate SAM from aln output |
+| Command       | Description                          |
+| ------------- | ------------------------------------ |
+| `index`       | Build BWT index from reference FASTA |
+| `mem`         | Align reads (preferred for 70bp+)    |
+| `aln`         | Align short reads (<70bp, legacy)    |
+| `samse/sampe` | Generate SAM from aln output         |
 
 ## Usage Examples
 

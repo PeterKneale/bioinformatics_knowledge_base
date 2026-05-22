@@ -61,36 +61,36 @@ bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\n' variants.bcf
 
 ## Output Format Flags (bcftools)
 
-| Flag | Format |
-|------|--------|
-| `-Ov` | Uncompressed VCF |
-| `-Oz` | Compressed VCF (.vcf.gz) |
-| `-Ob` | BCF |
+| Flag  | Format                        |
+| ----- | ----------------------------- |
+| `-Ov` | Uncompressed VCF              |
+| `-Oz` | Compressed VCF (.vcf.gz)      |
+| `-Ob` | BCF                           |
 | `-Ou` | Uncompressed BCF (for piping) |
 
 ## BCF vs VCF Comparison
 
-| Property | VCF (.vcf.gz) | BCF |
-|----------|---------------|-----|
-| Size | Larger | ~10-20% smaller |
-| Read speed | Slower (text parsing) | Faster (binary) |
-| Index | .tbi or .csi | .csi |
-| Human-readable | Yes (with zless) | No |
-| Tool support | Universal | bcftools, GATK, htslib-based |
+| Property       | VCF (.vcf.gz)         | BCF                          |
+| -------------- | --------------------- | ---------------------------- |
+| Size           | Larger                | ~10-20% smaller              |
+| Read speed     | Slower (text parsing) | Faster (binary)              |
+| Index          | .tbi or .csi          | .csi                         |
+| Human-readable | Yes (with zless)      | No                           |
+| Tool support   | Universal             | bcftools, GATK, htslib-based |
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
+| Tool                             | Context                |
+| -------------------------------- | ---------------------- |
 | [bcftools](../tools/bcftools.md) | Any command with `-Ob` |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| [bcftools](../tools/bcftools.md) | All VCF/BCF operations |
-| [GATK](../tools/gatk.md) | Variant analysis |
-| Any htslib-based tool | Transparent VCF/BCF support |
+| Tool                             | Purpose                     |
+| -------------------------------- | --------------------------- |
+| [bcftools](../tools/bcftools.md) | All VCF/BCF operations      |
+| [GATK](../tools/gatk.md)         | Variant analysis            |
+| Any htslib-based tool            | Transparent VCF/BCF support |
 
 ## When to Use BCF
 

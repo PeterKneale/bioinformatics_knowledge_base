@@ -16,12 +16,12 @@ conda install -c bioconda kallisto
 
 ## Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `index` | Build transcriptome index |
-| `quant` | Quantify transcript abundances |
-| `bus` | Generate BUS files (single-cell) |
-| `pseudo` | Pseudoalignment output |
+| Command  | Description                      |
+| -------- | -------------------------------- |
+| `index`  | Build transcriptome index        |
+| `quant`  | Quantify transcript abundances   |
+| `bus`    | Generate BUS files (single-cell) |
+| `pseudo` | Pseudoalignment output           |
 
 ## Usage Examples
 

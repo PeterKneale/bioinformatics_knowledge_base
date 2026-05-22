@@ -18,27 +18,27 @@ chr1    3000    4000
 chr2    5000    6000
 ```
 
-| Column | Field | Description |
-|--------|-------|-------------|
-| 1 | chrom | Chromosome name |
-| 2 | chromStart | Start position (0-based) |
-| 3 | chromEnd | End position (exclusive) |
+| Column | Field      | Description              |
+| ------ | ---------- | ------------------------ |
+| 1      | chrom      | Chromosome name          |
+| 2      | chromStart | Start position (0-based) |
+| 3      | chromEnd   | End position (exclusive) |
 
 **Important:** BED is **0-based, half-open** — `chr1 0 100` means bases 1-100 in 1-based coordinates.
 
 ### Extended Fields (BED6, BED12)
 
-| Column | Field | Description |
-|--------|-------|-------------|
-| 4 | name | Feature name |
-| 5 | score | Score (0-1000) |
-| 6 | strand | `+` or `-` |
-| 7 | thickStart | Display start (e.g., CDS start) |
-| 8 | thickEnd | Display end (e.g., CDS end) |
-| 9 | itemRgb | Display colour (R,G,B) |
-| 10 | blockCount | Number of blocks (exons) |
-| 11 | blockSizes | Comma-separated block sizes |
-| 12 | blockStarts | Comma-separated block starts |
+| Column | Field       | Description                     |
+| ------ | ----------- | ------------------------------- |
+| 4      | name        | Feature name                    |
+| 5      | score       | Score (0-1000)                  |
+| 6      | strand      | `+` or `-`                      |
+| 7      | thickStart  | Display start (e.g., CDS start) |
+| 8      | thickEnd    | Display end (e.g., CDS end)     |
+| 9      | itemRgb     | Display colour (R,G,B)          |
+| 10     | blockCount  | Number of blocks (exons)        |
+| 11     | blockSizes  | Comma-separated block sizes     |
+| 12     | blockStarts | Comma-separated block starts    |
 
 ### Examples
 
@@ -78,32 +78,32 @@ tabix regions.bed.gz chr1:1000000-2000000
 
 ## Coordinate System Note
 
-| Format | System | Example (first 100 bases of chr1) |
-|--------|--------|----------------------------------|
-| BED | 0-based, half-open | `chr1 0 100` |
-| VCF/GFF/SAM | 1-based, inclusive | `chr1:1-100` |
+| Format      | System             | Example (first 100 bases of chr1) |
+| ----------- | ------------------ | --------------------------------- |
+| BED         | 0-based, half-open | `chr1 0 100`                      |
+| VCF/GFF/SAM | 1-based, inclusive | `chr1:1-100`                      |
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
-| [bedtools](../tools/bedtools.md) | All interval operations |
-| [bedtools bamtobed](../tools/bedtools.md) | BAM → BED conversion |
-| Peak callers (MACS2, etc.) | ChIP-seq/ATAC-seq peaks |
-| [UCSC tools](https://genome.ucsc.edu/) | Annotation downloads |
+| Tool                                      | Context                 |
+| ----------------------------------------- | ----------------------- |
+| [bedtools](../tools/bedtools.md)          | All interval operations |
+| [bedtools bamtobed](../tools/bedtools.md) | BAM → BED conversion    |
+| Peak callers (MACS2, etc.)                | ChIP-seq/ATAC-seq peaks |
+| [UCSC tools](https://genome.ucsc.edu/)    | Annotation downloads    |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| [bedtools](../tools/bedtools.md) | Interval arithmetic |
-| [tabix](../tools/tabix.md) | Region queries |
-| [samtools](../tools/samtools.md) | Region specification (-L) |
-| [GATK](../tools/gatk.md) | Target intervals |
-| [deepTools](../tools/deeptools.md) | Region matrices |
-| [featureCounts](../tools/featurecounts.md) | Custom regions (SAF) |
-| [FreeBayes](../tools/freebayes.md) | Target regions (-t) |
-| [IGV](https://igv.org/) | Visualisation |
+| Tool                                       | Purpose                   |
+| ------------------------------------------ | ------------------------- |
+| [bedtools](../tools/bedtools.md)           | Interval arithmetic       |
+| [tabix](../tools/tabix.md)                 | Region queries            |
+| [samtools](../tools/samtools.md)           | Region specification (-L) |
+| [GATK](../tools/gatk.md)                   | Target intervals          |
+| [deepTools](../tools/deeptools.md)         | Region matrices           |
+| [featureCounts](../tools/featurecounts.md) | Custom regions (SAF)      |
+| [FreeBayes](../tools/freebayes.md)         | Target regions (-t)       |
+| [IGV](https://igv.org/)                    | Visualisation             |
 
 ## See Also
 

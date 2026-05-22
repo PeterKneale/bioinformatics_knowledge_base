@@ -18,16 +18,16 @@ brew install hmmer
 
 ## Key Programs
 
-| Program | Description |
-|---------|-------------|
-| `hmmbuild` | Build profile HMM from multiple alignment |
+| Program     | Description                                  |
+| ----------- | -------------------------------------------- |
+| `hmmbuild`  | Build profile HMM from multiple alignment    |
 | `hmmsearch` | Search profile HMM against sequence database |
-| `hmmscan` | Search sequence against profile HMM database |
-| `hmmpress` | Prepare HMM database for hmmscan |
-| `jackhmmer` | Iterative search (like PSI-BLAST) |
-| `phmmer` | Single sequence vs database (like BLASTP) |
-| `nhmmer` | Nucleotide HMM search |
-| `hmmemit` | Generate sequences from HMM |
+| `hmmscan`   | Search sequence against profile HMM database |
+| `hmmpress`  | Prepare HMM database for hmmscan             |
+| `jackhmmer` | Iterative search (like PSI-BLAST)            |
+| `phmmer`    | Single sequence vs database (like BLASTP)    |
+| `nhmmer`    | Nucleotide HMM search                        |
+| `hmmemit`   | Generate sequences from HMM                  |
 
 ## Usage Examples
 

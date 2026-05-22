@@ -56,33 +56,33 @@ cutadapt -j 8 -a AGATCGGAAGAGC -o trimmed.fq.gz reads.fq.gz
 
 ## Adapter Types
 
-| Flag | Position | Description |
-|------|----------|-------------|
-| `-a` | 3' end | Regular 3' adapter |
-| `-g` | 5' end | Regular 5' adapter |
-| `-b` | Both | Adapter anywhere |
-| `-A` | 3' (R2) | Paired-end read 2 adapter |
-| `-G` | 5' (R2) | Paired-end read 2 5' adapter |
+| Flag | Position | Description                  |
+| ---- | -------- | ---------------------------- |
+| `-a` | 3' end   | Regular 3' adapter           |
+| `-g` | 5' end   | Regular 5' adapter           |
+| `-b` | Both     | Adapter anywhere             |
+| `-A` | 3' (R2)  | Paired-end read 2 adapter    |
+| `-G` | 5' (R2)  | Paired-end read 2 5' adapter |
 
 ## Key Options
 
-| Option | Description |
-|--------|-------------|
-| `-o FILE` | Output file (R1) |
-| `-p FILE` | Output file (R2, paired-end) |
-| `-q INT` | Quality trim threshold |
-| `-m INT` | Minimum read length after trim |
-| `-M INT` | Maximum read length |
-| `-j INT` | Number of cores |
-| `--discard-trimmed` | Discard reads with adapter |
-| `--times INT` | Remove adapter up to N times |
-| `-e FLOAT` | Error rate (default: 0.1) |
-| `--overlap INT` | Min overlap for detection |
+| Option              | Description                    |
+| ------------------- | ------------------------------ |
+| `-o FILE`           | Output file (R1)               |
+| `-p FILE`           | Output file (R2, paired-end)   |
+| `-q INT`            | Quality trim threshold         |
+| `-m INT`            | Minimum read length after trim |
+| `-M INT`            | Maximum read length            |
+| `-j INT`            | Number of cores                |
+| `--discard-trimmed` | Discard reads with adapter     |
+| `--times INT`       | Remove adapter up to N times   |
+| `-e FLOAT`          | Error rate (default: 0.1)      |
+| `--overlap INT`     | Min overlap for detection      |
 
 ## Formats Consumed/Produced
 
-| Format | Description |
-|--------|-------------|
+| Format                       | Description        |
+| ---------------------------- | ------------------ |
 | [FASTQ](../formats/fastq.md) | Input/output reads |
 
 ## See Also

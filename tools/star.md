@@ -16,13 +16,13 @@ conda install -c bioconda star
 
 ## Key Operations
 
-| Mode | Description |
-|------|-------------|
-| `--runMode genomeGenerate` | Build genome index with annotation |
-| `--runMode alignReads` | Align RNA-seq reads (default) |
-| `--quantMode GeneCounts` | Quantify gene expression during alignment |
-| `--chimSegmentMin` | Enable chimeric/fusion detection |
-| `--twopassMode Basic` | Two-pass mapping for novel junction discovery |
+| Mode                       | Description                                   |
+| -------------------------- | --------------------------------------------- |
+| `--runMode genomeGenerate` | Build genome index with annotation            |
+| `--runMode alignReads`     | Align RNA-seq reads (default)                 |
+| `--quantMode GeneCounts`   | Quantify gene expression during alignment     |
+| `--chimSegmentMin`         | Enable chimeric/fusion detection              |
+| `--twopassMode Basic`      | Two-pass mapping for novel junction discovery |
 
 ## Usage Examples
 

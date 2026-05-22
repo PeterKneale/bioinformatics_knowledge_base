@@ -18,14 +18,14 @@ brew install blast
 
 ## Programs
 
-| Program | Query → Database |
-|---------|-----------------|
-| `blastn` | Nucleotide → Nucleotide |
-| `blastp` | Protein → Protein |
-| `blastx` | Translated nucleotide → Protein |
-| `tblastn` | Protein → Translated nucleotide |
-| `tblastx` | Translated nucleotide → Translated nucleotide |
-| `makeblastdb` | Create BLAST database |
+| Program       | Query → Database                              |
+| ------------- | --------------------------------------------- |
+| `blastn`      | Nucleotide → Nucleotide                       |
+| `blastp`      | Protein → Protein                             |
+| `blastx`      | Translated nucleotide → Protein               |
+| `tblastn`     | Protein → Translated nucleotide               |
+| `tblastx`     | Translated nucleotide → Translated nucleotide |
+| `makeblastdb` | Create BLAST database                         |
 
 ## Usage Examples
 

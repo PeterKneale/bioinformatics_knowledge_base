@@ -16,9 +16,9 @@ conda install -c bioconda salmon
 
 ## Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `index` | Build transcriptome index |
+| Command | Description                           |
+| ------- | ------------------------------------- |
+| `index` | Build transcriptome index             |
 | `quant` | Quantify abundances from FASTQ or BAM |
 
 ## Usage Examples
@@ -61,12 +61,12 @@ salmon quant -i salmon_index \
 
 ## Library Type (`-l`)
 
-| Code | Description |
-|------|-------------|
-| `A` | Automatic detection (recommended) |
-| `ISR` | Inward, stranded, read 1 reverse |
-| `ISF` | Inward, stranded, read 1 forward |
-| `IU` | Inward, unstranded |
+| Code  | Description                       |
+| ----- | --------------------------------- |
+| `A`   | Automatic detection (recommended) |
+| `ISR` | Inward, stranded, read 1 reverse  |
+| `ISF` | Inward, stranded, read 1 forward  |
+| `IU`  | Inward, unstranded                |
 
 ## Produces
 

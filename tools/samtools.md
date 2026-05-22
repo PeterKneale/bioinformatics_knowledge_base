@@ -18,20 +18,20 @@ brew install samtools
 
 ## Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `view` | Convert between SAM/BAM/CRAM, filter by flag/region |
-| `sort` | Sort alignments by coordinate or name |
-| `index` | Create .bai/.csi index for coordinate-sorted BAM |
-| `flagstat` | Quick alignment QC summary |
-| `stats` | Comprehensive alignment statistics |
-| `depth` | Per-base or per-region depth |
-| `markdup` | Mark or remove PCR duplicates |
-| `merge` | Merge multiple sorted BAM files |
-| `mpileup` | Generate pileup for variant calling |
-| `faidx` | Index and extract FASTA sequences |
-| `fastq` | Convert BAM back to FASTQ |
-| `idxstats` | Per-chromosome mapped/unmapped counts |
+| Command    | Description                                         |
+| ---------- | --------------------------------------------------- |
+| `view`     | Convert between SAM/BAM/CRAM, filter by flag/region |
+| `sort`     | Sort alignments by coordinate or name               |
+| `index`    | Create .bai/.csi index for coordinate-sorted BAM    |
+| `flagstat` | Quick alignment QC summary                          |
+| `stats`    | Comprehensive alignment statistics                  |
+| `depth`    | Per-base or per-region depth                        |
+| `markdup`  | Mark or remove PCR duplicates                       |
+| `merge`    | Merge multiple sorted BAM files                     |
+| `mpileup`  | Generate pileup for variant calling                 |
+| `faidx`    | Index and extract FASTA sequences                   |
+| `fastq`    | Convert BAM back to FASTQ                           |
+| `idxstats` | Per-chromosome mapped/unmapped counts               |
 
 ## Usage Examples
 

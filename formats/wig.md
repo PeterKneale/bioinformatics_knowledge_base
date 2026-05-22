@@ -36,12 +36,12 @@ Each line specifies position and value.
 
 ### Parameters
 
-| Parameter | Description |
-|-----------|-------------|
-| `chrom` | Chromosome name |
-| `start` | Start position (1-based) |
-| `step` | Distance between values (fixedStep) |
-| `span` | Size of each feature (default: 1) |
+| Parameter | Description                         |
+| --------- | ----------------------------------- |
+| `chrom`   | Chromosome name                     |
+| `start`   | Start position (1-based)            |
+| `step`    | Distance between values (fixedStep) |
+| `span`    | Size of each feature (default: 1)   |
 
 ## Indexing
 
@@ -54,16 +54,16 @@ wigToBigWig input.wig chrom.sizes output.bw
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
-| Various coverage tools | Legacy format output |
+| Tool                   | Context                  |
+| ---------------------- | ------------------------ |
+| Various coverage tools | Legacy format output     |
 | Conservation pipelines | PhyloP, PhastCons scores |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| UCSC `wigToBigWig` | Convert to BigWig |
+| Tool                | Purpose                  |
+| ------------------- | ------------------------ |
+| UCSC `wigToBigWig`  | Convert to BigWig        |
 | UCSC Genome Browser | Display (prefers BigWig) |
 
 ## Notes

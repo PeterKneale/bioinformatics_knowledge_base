@@ -28,12 +28,12 @@ NNNNNNNNNNNNNNNNNNNNNNNNACCCAAAGCTCAGCCTTGTTTCTTGTAACT
 
 ### Fields
 
-| Component | Description |
-|-----------|-------------|
-| `>` | Header line prefix |
-| Sequence ID | First word after `>` (no spaces) |
-| Description | Remainder of header line (optional) |
-| Sequence | One or more lines of sequence data (typically wrapped at 60-80 chars) |
+| Component   | Description                                                           |
+| ----------- | --------------------------------------------------------------------- |
+| `>`         | Header line prefix                                                    |
+| Sequence ID | First word after `>` (no spaces)                                      |
+| Description | Remainder of header line (optional)                                   |
+| Sequence    | One or more lines of sequence data (typically wrapped at 60-80 chars) |
 
 ## Indexing
 
@@ -51,13 +51,13 @@ samtools faidx reference.fa chr1:1000-2000
 
 The `.fai` file is tab-delimited:
 
-| Column | Content |
-|--------|---------|
-| 1 | Sequence name |
-| 2 | Sequence length |
-| 3 | Byte offset of first base |
-| 4 | Bases per line |
-| 5 | Bytes per line |
+| Column | Content                   |
+| ------ | ------------------------- |
+| 1      | Sequence name             |
+| 2      | Sequence length           |
+| 3      | Byte offset of first base |
+| 4      | Bases per line            |
+| 5      | Bytes per line            |
 
 ### Sequence Dictionary (`.dict`)
 
@@ -88,29 +88,29 @@ Produces: `.amb`, `.ann`, `.bwt`, `.pac`, `.sa`
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
-| Genome assemblies | Reference genomes |
-| [bcftools consensus](../tools/bcftools.md) | Consensus from VCF |
-| [bedtools getfasta](../tools/bedtools.md) | Extracted regions |
-| [SeqKit](../tools/seqkit.md) | Converted/filtered sequences |
-| [samtools faidx](../tools/samtools.md) | Extracted subsequences |
+| Tool                                       | Context                      |
+| ------------------------------------------ | ---------------------------- |
+| Genome assemblies                          | Reference genomes            |
+| [bcftools consensus](../tools/bcftools.md) | Consensus from VCF           |
+| [bedtools getfasta](../tools/bedtools.md)  | Extracted regions            |
+| [SeqKit](../tools/seqkit.md)               | Converted/filtered sequences |
+| [samtools faidx](../tools/samtools.md)     | Extracted subsequences       |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| [BWA](../tools/bwa.md) | Reference for alignment |
-| [Bowtie2](../tools/bowtie2.md) | Reference for alignment |
-| [STAR](../tools/star.md) | Genome index building |
-| [BLAST](../tools/blast.md) | Database/query sequences |
-| [HMMER](../tools/hmmer.md) | Sequence databases |
-| [MUSCLE](../tools/muscle.md) | Multiple alignment input |
-| [MAFFT](../tools/mafft.md) | Multiple alignment input |
-| [Kallisto](../tools/kallisto.md) | Transcriptome index |
-| [Salmon](../tools/salmon.md) | Transcriptome index |
-| [samtools](../tools/samtools.md) | Reference for pileup |
-| [SeqKit](../tools/seqkit.md) | Sequence manipulation |
+| Tool                             | Purpose                  |
+| -------------------------------- | ------------------------ |
+| [BWA](../tools/bwa.md)           | Reference for alignment  |
+| [Bowtie2](../tools/bowtie2.md)   | Reference for alignment  |
+| [STAR](../tools/star.md)         | Genome index building    |
+| [BLAST](../tools/blast.md)       | Database/query sequences |
+| [HMMER](../tools/hmmer.md)       | Sequence databases       |
+| [MUSCLE](../tools/muscle.md)     | Multiple alignment input |
+| [MAFFT](../tools/mafft.md)       | Multiple alignment input |
+| [Kallisto](../tools/kallisto.md) | Transcriptome index      |
+| [Salmon](../tools/salmon.md)     | Transcriptome index      |
+| [samtools](../tools/samtools.md) | Reference for pileup     |
+| [SeqKit](../tools/seqkit.md)     | Sequence manipulation    |
 
 ## See Also
 

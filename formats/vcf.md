@@ -26,18 +26,18 @@ Standard format for representing genomic variants (SNPs, indels, structural vari
 
 ### Data Columns
 
-| Col | Field | Description |
-|-----|-------|-------------|
-| 1 | CHROM | Chromosome |
-| 2 | POS | 1-based position |
-| 3 | ID | Variant identifier (rsID or `.`) |
-| 4 | REF | Reference allele |
-| 5 | ALT | Alternate allele(s), comma-separated |
-| 6 | QUAL | Phred-scaled variant quality |
-| 7 | FILTER | Filter status (`PASS` or filter name) |
-| 8 | INFO | Semicolon-separated key=value annotations |
-| 9 | FORMAT | Colon-separated genotype field keys |
-| 10+ | SAMPLES | Per-sample genotype data |
+| Col | Field   | Description                               |
+| --- | ------- | ----------------------------------------- |
+| 1   | CHROM   | Chromosome                                |
+| 2   | POS     | 1-based position                          |
+| 3   | ID      | Variant identifier (rsID or `.`)          |
+| 4   | REF     | Reference allele                          |
+| 5   | ALT     | Alternate allele(s), comma-separated      |
+| 6   | QUAL    | Phred-scaled variant quality              |
+| 7   | FILTER  | Filter status (`PASS` or filter name)     |
+| 8   | INFO    | Semicolon-separated key=value annotations |
+| 9   | FORMAT  | Colon-separated genotype field keys       |
+| 10+ | SAMPLES | Per-sample genotype data                  |
 
 ### Example
 
@@ -50,14 +50,14 @@ chr1	10352	rs145072688	T	TA	200	PASS	DP=100;AF=0.60	GT:DP:GQ	1/1:95:99
 
 ## Genotype Field
 
-| Value | Meaning |
-|-------|---------|
-| `0/0` | Homozygous reference |
-| `0/1` | Heterozygous |
-| `1/1` | Homozygous alternate |
+| Value | Meaning                        |
+| ----- | ------------------------------ |
+| `0/0` | Homozygous reference           |
+| `0/1` | Heterozygous                   |
+| `1/1` | Homozygous alternate           |
 | `1/2` | Heterozygous (two alt alleles) |
-| `./.` | Missing genotype |
-| `0|1` | Phased heterozygous |
+| `./.` | Missing genotype               |
+| `0    | 1`                             | Phased heterozygous |
 
 ## Indexing
 
@@ -92,10 +92,10 @@ bcftools index --tbi variants.vcf.gz    # force .tbi
 
 ### Index Comparison
 
-| Index | Extension | Max Chrom Size | Tool |
-|-------|-----------|---------------|------|
-| TBI | `.tbi` | 512 Mb | tabix |
-| CSI | `.csi` | Unlimited | bcftools index, tabix --csi |
+| Index | Extension | Max Chrom Size | Tool                        |
+| ----- | --------- | -------------- | --------------------------- |
+| TBI   | `.tbi`    | 512 Mb         | tabix                       |
+| CSI   | `.csi`    | Unlimited      | bcftools index, tabix --csi |
 
 ## gVCF (Genomic VCF)
 
@@ -108,25 +108,25 @@ chr1	10177	rs367896724	A	AC,<NON_REF>	100	.	DP=50	GT:DP:GQ	0/1:48:99
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
-| [GATK HaplotypeCaller](../tools/gatk.md) | Germline variant calling |
-| [GATK Mutect2](../tools/gatk.md) | Somatic variant calling |
-| [bcftools call](../tools/bcftools.md) | Variant calling |
-| [FreeBayes](../tools/freebayes.md) | Bayesian variant calling |
-| [bcftools filter/view](../tools/bcftools.md) | Filtered variants |
+| Tool                                         | Context                  |
+| -------------------------------------------- | ------------------------ |
+| [GATK HaplotypeCaller](../tools/gatk.md)     | Germline variant calling |
+| [GATK Mutect2](../tools/gatk.md)             | Somatic variant calling  |
+| [bcftools call](../tools/bcftools.md)        | Variant calling          |
+| [FreeBayes](../tools/freebayes.md)           | Bayesian variant calling |
+| [bcftools filter/view](../tools/bcftools.md) | Filtered variants        |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| [bcftools](../tools/bcftools.md) | Filter, query, annotate, merge |
-| [GATK](../tools/gatk.md) | Joint genotyping, filtering |
+| Tool                             | Purpose                          |
+| -------------------------------- | -------------------------------- |
+| [bcftools](../tools/bcftools.md) | Filter, query, annotate, merge   |
+| [GATK](../tools/gatk.md)         | Joint genotyping, filtering      |
 | [VCFtools](../tools/vcftools.md) | Population statistics, filtering |
-| [tabix](../tools/tabix.md) | Region queries |
-| [PLINK](../tools/plink.md) | GWAS import |
-| [bedtools](../tools/bedtools.md) | Interval operations |
-| [IGV](https://igv.org/) | Visualisation |
+| [tabix](../tools/tabix.md)       | Region queries                   |
+| [PLINK](../tools/plink.md)       | GWAS import                      |
+| [bedtools](../tools/bedtools.md) | Interval operations              |
+| [IGV](https://igv.org/)          | Visualisation                    |
 
 ## See Also
 

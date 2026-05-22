@@ -18,14 +18,14 @@ pip install multiqc
 
 ## Supported Tools (Selection)
 
-| Category | Tools |
-|----------|-------|
-| QC | FastQC, fastp, Cutadapt |
-| Alignment | STAR, HISAT2, Bowtie2, BWA, samtools |
-| Duplicates | Picard MarkDuplicates |
-| Quantification | featureCounts, HTSeq, Salmon, Kallisto |
-| Variant calling | bcftools stats, GATK, VCFtools |
-| Trimming | Trimmomatic, fastp |
+| Category        | Tools                                  |
+| --------------- | -------------------------------------- |
+| QC              | FastQC, fastp, Cutadapt                |
+| Alignment       | STAR, HISAT2, Bowtie2, BWA, samtools   |
+| Duplicates      | Picard MarkDuplicates                  |
+| Quantification  | featureCounts, HTSeq, Salmon, Kallisto |
+| Variant calling | bcftools stats, GATK, VCFtools         |
+| Trimming        | Trimmomatic, fastp                     |
 
 ## Usage Examples
 

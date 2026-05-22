@@ -31,12 +31,12 @@ IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII9IG9ICIIIIIIIIIIIIIIIIIIIIDIIIIIII>IIIIII/
 
 ### Fields
 
-| Line | Content |
-|------|---------|
-| 1 | `@` + Sequence ID + optional description |
-| 2 | Raw nucleotide sequence (A, C, G, T, N) |
-| 3 | `+` (optionally followed by ID again) |
-| 4 | Quality scores (same length as line 2) |
+| Line | Content                                  |
+| ---- | ---------------------------------------- |
+| 1    | `@` + Sequence ID + optional description |
+| 2    | Raw nucleotide sequence (A, C, G, T, N)  |
+| 3    | `+` (optionally followed by ID again)    |
+| 4    | Quality scores (same length as line 2)   |
 
 ## Quality Encoding
 
@@ -44,10 +44,10 @@ Quality scores represent the probability of an incorrect base call:
 
 $$Q = -10 \log_{10}(P_{error})$$
 
-| Encoding | Offset | Range | Platforms |
-|----------|--------|-------|-----------|
-| Phred+33 (Sanger) | 33 | 0-41 | Modern Illumina, PacBio, Nanopore |
-| Phred+64 (Illumina 1.3-1.7) | 64 | 0-41 | Legacy Illumina (pre-2011) |
+| Encoding                    | Offset | Range | Platforms                         |
+| --------------------------- | ------ | ----- | --------------------------------- |
+| Phred+33 (Sanger)           | 33     | 0-41  | Modern Illumina, PacBio, Nanopore |
+| Phred+64 (Illumina 1.3-1.7) | 64     | 0-41  | Legacy Illumina (pre-2011)        |
 
 ASCII character `I` (ASCII 73) with Phred+33 = quality score 40 (99.99% accuracy).
 
@@ -70,28 +70,28 @@ FASTQ files are not typically indexed. For random access, convert to BAM (after 
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
-| Sequencing platforms | Primary output |
-| [fastp](../tools/fastp.md) | Trimmed/filtered reads |
-| [Trimmomatic](../tools/trimmomatic.md) | Trimmed reads |
-| [Cutadapt](../tools/cutadapt.md) | Adapter-removed reads |
-| [samtools fastq](../tools/samtools.md) | Extracted from BAM |
-| [SeqKit](../tools/seqkit.md) | Filtered/transformed reads |
+| Tool                                   | Context                    |
+| -------------------------------------- | -------------------------- |
+| Sequencing platforms                   | Primary output             |
+| [fastp](../tools/fastp.md)             | Trimmed/filtered reads     |
+| [Trimmomatic](../tools/trimmomatic.md) | Trimmed reads              |
+| [Cutadapt](../tools/cutadapt.md)       | Adapter-removed reads      |
+| [samtools fastq](../tools/samtools.md) | Extracted from BAM         |
+| [SeqKit](../tools/seqkit.md)           | Filtered/transformed reads |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| [FastQC](../tools/fastqc.md) | Quality assessment |
-| [BWA](../tools/bwa.md) | Alignment |
-| [Bowtie2](../tools/bowtie2.md) | Alignment |
-| [STAR](../tools/star.md) | RNA-seq alignment |
-| [HISAT2](../tools/hisat2.md) | RNA-seq alignment |
-| [minimap2](../tools/minimap2.md) | Long-read alignment |
-| [Kallisto](../tools/kallisto.md) | Pseudoalignment |
-| [Salmon](../tools/salmon.md) | Transcript quantification |
-| [SeqKit](../tools/seqkit.md) | Manipulation |
+| Tool                             | Purpose                   |
+| -------------------------------- | ------------------------- |
+| [FastQC](../tools/fastqc.md)     | Quality assessment        |
+| [BWA](../tools/bwa.md)           | Alignment                 |
+| [Bowtie2](../tools/bowtie2.md)   | Alignment                 |
+| [STAR](../tools/star.md)         | RNA-seq alignment         |
+| [HISAT2](../tools/hisat2.md)     | RNA-seq alignment         |
+| [minimap2](../tools/minimap2.md) | Long-read alignment       |
+| [Kallisto](../tools/kallisto.md) | Pseudoalignment           |
+| [Salmon](../tools/salmon.md)     | Transcript quantification |
+| [SeqKit](../tools/seqkit.md)     | Manipulation              |
 
 ## See Also
 

@@ -18,15 +18,15 @@ pip install HTSeq
 
 ## Key Options
 
-| Option | Description |
-|--------|-------------|
-| `-f` | Input format (bam/sam) |
-| `-r` | Sort order (pos/name) |
-| `-s` | Strandedness (yes/no/reverse) |
-| `-t` | Feature type (default: exon) |
-| `-i` | ID attribute (default: gene_id) |
-| `--mode` | Overlap resolution (union/intersection-strict/intersection-nonempty) |
-| `--nonunique` | How to handle multi-mappers (none/all/fraction/random) |
+| Option        | Description                                                          |
+| ------------- | -------------------------------------------------------------------- |
+| `-f`          | Input format (bam/sam)                                               |
+| `-r`          | Sort order (pos/name)                                                |
+| `-s`          | Strandedness (yes/no/reverse)                                        |
+| `-t`          | Feature type (default: exon)                                         |
+| `-i`          | ID attribute (default: gene_id)                                      |
+| `--mode`      | Overlap resolution (union/intersection-strict/intersection-nonempty) |
+| `--nonunique` | How to handle multi-mappers (none/all/fraction/random)               |
 
 ## Usage Examples
 

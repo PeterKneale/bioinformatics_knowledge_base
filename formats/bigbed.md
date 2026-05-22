@@ -57,29 +57,29 @@ bigBedSummary input.bb chr1 1000000 2000000 10
 
 ## BigBed vs BED
 
-| Property | BigBed | BED (bgzipped+tabix) |
-|----------|--------|---------------------|
-| Type | Binary | Text |
-| Index | Built-in | Separate .tbi |
-| Browser support | Native | Limited |
-| File size | Smaller | Larger |
-| Editable | No | Yes |
-| Creation | bedToBigBed | bgzip + tabix |
+| Property        | BigBed      | BED (bgzipped+tabix) |
+| --------------- | ----------- | -------------------- |
+| Type            | Binary      | Text                 |
+| Index           | Built-in    | Separate .tbi        |
+| Browser support | Native      | Limited              |
+| File size       | Smaller     | Larger               |
+| Editable        | No          | Yes                  |
+| Creation        | bedToBigBed | bgzip + tabix        |
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
+| Tool               | Context                 |
+| ------------------ | ----------------------- |
 | UCSC `bedToBigBed` | BED → BigBed conversion |
-| ENCODE pipeline | Peak file delivery |
+| ENCODE pipeline    | Peak file delivery      |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| UCSC Genome Browser | Track display |
-| [IGV](https://igv.org/) | Visualisation |
-| UCSC `bigBedToBed` | Convert to text BED |
+| Tool                    | Purpose             |
+| ----------------------- | ------------------- |
+| UCSC Genome Browser     | Track display       |
+| [IGV](https://igv.org/) | Visualisation       |
+| UCSC `bigBedToBed`      | Convert to text BED |
 
 ## See Also
 

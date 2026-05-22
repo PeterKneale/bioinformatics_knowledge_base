@@ -20,30 +20,30 @@ Tab-delimited text format for storing aligned sequencing reads against a referen
 @PG     ID:bwa  PN:bwa  VN:0.7.17       CL:bwa mem -t 8 ref.fa r1.fq r2.fq
 ```
 
-| Tag | Description |
-|-----|-------------|
+| Tag   | Description                       |
+| ----- | --------------------------------- |
 | `@HD` | Header line (version, sort order) |
-| `@SQ` | Reference sequence dictionary |
-| `@RG` | Read group |
-| `@PG` | Program used |
+| `@SQ` | Reference sequence dictionary     |
+| `@RG` | Read group                        |
+| `@PG` | Program used                      |
 
 ### Alignment Section
 
 Each line represents one read alignment with 11 mandatory fields:
 
-| Col | Field | Description |
-|-----|-------|-------------|
-| 1 | QNAME | Read name |
-| 2 | FLAG | Bitwise flag (see BAM flags) |
-| 3 | RNAME | Reference sequence name |
-| 4 | POS | 1-based leftmost mapping position |
-| 5 | MAPQ | Mapping quality (Phred-scaled) |
-| 6 | CIGAR | Alignment operations |
-| 7 | RNEXT | Mate reference name (`=` if same) |
-| 8 | PNEXT | Mate position |
-| 9 | TLEN | Template length (insert size) |
-| 10 | SEQ | Read sequence |
-| 11 | QUAL | Base quality (Phred+33) |
+| Col | Field | Description                       |
+| --- | ----- | --------------------------------- |
+| 1   | QNAME | Read name                         |
+| 2   | FLAG  | Bitwise flag (see BAM flags)      |
+| 3   | RNAME | Reference sequence name           |
+| 4   | POS   | 1-based leftmost mapping position |
+| 5   | MAPQ  | Mapping quality (Phred-scaled)    |
+| 6   | CIGAR | Alignment operations              |
+| 7   | RNEXT | Mate reference name (`=` if same) |
+| 8   | PNEXT | Mate position                     |
+| 9   | TLEN  | Template length (insert size)     |
+| 10  | SEQ   | Read sequence                     |
+| 11  | QUAL  | Base quality (Phred+33)           |
 
 ### Example
 
@@ -56,16 +56,16 @@ read001	147	chr1	10200	60	76M	=	10000	-276	TGCATGCA...	IIIIIII...	NM:i:1	MD:Z:50
 
 ## CIGAR String
 
-| Op | Description |
-|----|-------------|
-| `M` | Alignment match (or mismatch) |
-| `I` | Insertion to reference |
-| `D` | Deletion from reference |
+| Op  | Description                        |
+| --- | ---------------------------------- |
+| `M` | Alignment match (or mismatch)      |
+| `I` | Insertion to reference             |
+| `D` | Deletion from reference            |
 | `N` | Skipped region (intron in RNA-seq) |
-| `S` | Soft clipping (present in SEQ) |
-| `H` | Hard clipping (not in SEQ) |
-| `=` | Sequence match |
-| `X` | Sequence mismatch |
+| `S` | Soft clipping (present in SEQ)     |
+| `H` | Hard clipping (not in SEQ)         |
+| `=` | Sequence match                     |
+| `X` | Sequence mismatch                  |
 
 Example: `50M2I24M` = 50 matches, 2bp insertion, 24 matches
 
@@ -80,22 +80,22 @@ samtools index sorted.bam
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
-| [BWA](../tools/bwa.md) | Default alignment output |
-| [Bowtie2](../tools/bowtie2.md) | Default alignment output |
-| [HISAT2](../tools/hisat2.md) | Default alignment output |
-| [minimap2](../tools/minimap2.md) | With `-a` flag |
-| [samtools view](../tools/samtools.md) | BAM → SAM conversion |
+| Tool                                  | Context                  |
+| ------------------------------------- | ------------------------ |
+| [BWA](../tools/bwa.md)                | Default alignment output |
+| [Bowtie2](../tools/bowtie2.md)        | Default alignment output |
+| [HISAT2](../tools/hisat2.md)          | Default alignment output |
+| [minimap2](../tools/minimap2.md)      | With `-a` flag           |
+| [samtools view](../tools/samtools.md) | BAM → SAM conversion     |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| [samtools](../tools/samtools.md) | Convert to BAM, filter, stats |
-| [Picard](../tools/picard.md) | Validation, metrics |
-| [featureCounts](../tools/featurecounts.md) | Read counting |
-| [HTSeq-count](../tools/htseq-count.md) | Read counting |
+| Tool                                       | Purpose                       |
+| ------------------------------------------ | ----------------------------- |
+| [samtools](../tools/samtools.md)           | Convert to BAM, filter, stats |
+| [Picard](../tools/picard.md)               | Validation, metrics           |
+| [featureCounts](../tools/featurecounts.md) | Read counting                 |
+| [HTSeq-count](../tools/htseq-count.md)     | Read counting                 |
 
 ## Notes
 

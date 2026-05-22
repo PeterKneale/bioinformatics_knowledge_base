@@ -16,19 +16,19 @@ conda install -c bioconda gatk4
 
 ## Key Tools
 
-| Tool | Description |
-|------|-------------|
-| `HaplotypeCaller` | Germline SNP/indel calling (per-sample) |
-| `GenotypeGVCFs` | Joint genotyping from gVCFs |
-| `Mutect2` | Somatic variant calling (tumor/normal) |
-| `BaseRecalibrator` | Model base quality errors |
-| `ApplyBQSR` | Apply recalibrated quality scores |
-| `VariantFiltration` | Hard-filter variants by expression |
-| `VariantRecalibrator` | Train VQSR model for filtering |
-| `ApplyVQSR` | Apply VQSR filtering |
-| `CombineGVCFs` | Merge per-sample gVCFs |
-| `SelectVariants` | Subset variants by type/criteria |
-| `MarkDuplicatesSpark` | Spark-enabled duplicate marking |
+| Tool                  | Description                             |
+| --------------------- | --------------------------------------- |
+| `HaplotypeCaller`     | Germline SNP/indel calling (per-sample) |
+| `GenotypeGVCFs`       | Joint genotyping from gVCFs             |
+| `Mutect2`             | Somatic variant calling (tumor/normal)  |
+| `BaseRecalibrator`    | Model base quality errors               |
+| `ApplyBQSR`           | Apply recalibrated quality scores       |
+| `VariantFiltration`   | Hard-filter variants by expression      |
+| `VariantRecalibrator` | Train VQSR model for filtering          |
+| `ApplyVQSR`           | Apply VQSR filtering                    |
+| `CombineGVCFs`        | Merge per-sample gVCFs                  |
+| `SelectVariants`      | Subset variants by type/criteria        |
+| `MarkDuplicatesSpark` | Spark-enabled duplicate marking         |
 
 ## Usage Examples
 

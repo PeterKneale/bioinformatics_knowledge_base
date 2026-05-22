@@ -74,44 +74,44 @@ computeMatrix reference-point -S coverage.bw -R genes.bed -o matrix.gz
 
 ## Normalisation Methods (deepTools)
 
-| Method | Description |
-|--------|-------------|
-| RPKM | Reads Per Kilobase per Million mapped reads |
-| CPM | Counts Per Million mapped reads |
-| BPM | Bins Per Million (like TPM for bins) |
-| RPGC | Reads Per Genomic Content (1× coverage) |
-| None | Raw read counts |
+| Method | Description                                 |
+| ------ | ------------------------------------------- |
+| RPKM   | Reads Per Kilobase per Million mapped reads |
+| CPM    | Counts Per Million mapped reads             |
+| BPM    | Bins Per Million (like TPM for bins)        |
+| RPGC   | Reads Per Genomic Content (1× coverage)     |
+| None   | Raw read counts                             |
 
 ## Tools That Create This Format
 
-| Tool | Context |
-|------|---------|
+| Tool                                           | Context                 |
+| ---------------------------------------------- | ----------------------- |
 | [deepTools bamCoverage](../tools/deeptools.md) | BAM → normalised BigWig |
-| [deepTools bamCompare](../tools/deeptools.md) | Ratio BigWig |
-| UCSC `bedGraphToBigWig` | BedGraph → BigWig |
-| UCSC `wigToBigWig` | WIG → BigWig |
+| [deepTools bamCompare](../tools/deeptools.md)  | Ratio BigWig            |
+| UCSC `bedGraphToBigWig`                        | BedGraph → BigWig       |
+| UCSC `wigToBigWig`                             | WIG → BigWig            |
 
 ## Tools That Read This Format
 
-| Tool | Purpose |
-|------|---------|
-| [deepTools computeMatrix](../tools/deeptools.md) | Signal matrices for heatmaps |
-| [deepTools plotHeatmap/plotProfile](../tools/deeptools.md) | Visualisation |
-| [IGV](https://igv.org/) | Genome browser display |
-| UCSC Genome Browser | Track display |
-| UCSC `bigWigSummary` | Summary statistics |
-| UCSC `bigWigToBedGraph` | Convert back to text |
+| Tool                                                       | Purpose                      |
+| ---------------------------------------------------------- | ---------------------------- |
+| [deepTools computeMatrix](../tools/deeptools.md)           | Signal matrices for heatmaps |
+| [deepTools plotHeatmap/plotProfile](../tools/deeptools.md) | Visualisation                |
+| [IGV](https://igv.org/)                                    | Genome browser display       |
+| UCSC Genome Browser                                        | Track display                |
+| UCSC `bigWigSummary`                                       | Summary statistics           |
+| UCSC `bigWigToBedGraph`                                    | Convert back to text         |
 
 ## BigWig vs BedGraph vs WIG
 
-| Property | BigWig | BedGraph | WIG |
-|----------|--------|----------|-----|
-| Type | Binary | Text | Text |
-| Indexed | Built-in | Via tabix | No |
-| Random access | Fast | With tabix | No |
-| File size | Small | Large | Large |
-| Genome browser | Direct | Must convert | Must convert |
-| Editability | No | Yes | Yes |
+| Property       | BigWig   | BedGraph     | WIG          |
+| -------------- | -------- | ------------ | ------------ |
+| Type           | Binary   | Text         | Text         |
+| Indexed        | Built-in | Via tabix    | No           |
+| Random access  | Fast     | With tabix   | No           |
+| File size      | Small    | Large        | Large        |
+| Genome browser | Direct   | Must convert | Must convert |
+| Editability    | No       | Yes          | Yes          |
 
 ## See Also
 

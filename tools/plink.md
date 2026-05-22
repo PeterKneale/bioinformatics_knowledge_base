@@ -7,9 +7,9 @@
 
 ## Versions
 
-| Version | Notes |
-|---------|-------|
-| PLINK 1.9 | Stable, widely used |
+| Version   | Notes                                           |
+| --------- | ----------------------------------------------- |
+| PLINK 1.9 | Stable, widely used                             |
 | PLINK 2.0 | Faster, better file formats, VCF native support |
 
 ## Installation
@@ -77,27 +77,27 @@ plink2 --pfile dataset --freq --out freq
 
 ## File Formats
 
-| Extension | Format | Description |
-|-----------|--------|-------------|
-| `.bed` | Binary | Genotype matrix (binary) |
-| `.bim` | Text | Variant information |
-| `.fam` | Text | Sample information |
-| `.pgen` | Binary | PLINK 2 genotype (compressed) |
-| `.pvar` | Text | PLINK 2 variant info |
-| `.psam` | Text | PLINK 2 sample info |
+| Extension | Format | Description                   |
+| --------- | ------ | ----------------------------- |
+| `.bed`    | Binary | Genotype matrix (binary)      |
+| `.bim`    | Text   | Variant information           |
+| `.fam`    | Text   | Sample information            |
+| `.pgen`   | Binary | PLINK 2 genotype (compressed) |
+| `.pvar`   | Text   | PLINK 2 variant info          |
+| `.psam`   | Text   | PLINK 2 sample info           |
 
 ## Key Options
 
-| Option | Description |
-|--------|-------------|
-| `--bfile PREFIX` | Input BED/BIM/FAM |
-| `--vcf FILE` | Input VCF |
-| `--make-bed` | Output BED/BIM/FAM |
-| `--maf FLOAT` | Min allele frequency |
-| `--geno FLOAT` | Max missing per variant |
-| `--mind FLOAT` | Max missing per sample |
-| `--hwe FLOAT` | HWE p-value threshold |
-| `--out PREFIX` | Output prefix |
+| Option           | Description             |
+| ---------------- | ----------------------- |
+| `--bfile PREFIX` | Input BED/BIM/FAM       |
+| `--vcf FILE`     | Input VCF               |
+| `--make-bed`     | Output BED/BIM/FAM      |
+| `--maf FLOAT`    | Min allele frequency    |
+| `--geno FLOAT`   | Max missing per variant |
+| `--mind FLOAT`   | Max missing per sample  |
+| `--hwe FLOAT`    | HWE p-value threshold   |
+| `--out PREFIX`   | Output prefix           |
 
 ## See Also
 

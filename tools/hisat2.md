@@ -16,12 +16,12 @@ conda install -c bioconda hisat2
 
 ## Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `hisat2-build` | Build genome index |
-| `hisat2` | Align reads |
+| Command                          | Description                   |
+| -------------------------------- | ----------------------------- |
+| `hisat2-build`                   | Build genome index            |
+| `hisat2`                         | Align reads                   |
 | `hisat2_extract_splice_sites.py` | Extract splice sites from GTF |
-| `hisat2_extract_exons.py` | Extract exons from GTF |
+| `hisat2_extract_exons.py`        | Extract exons from GTF        |
 
 ## Usage Examples
 

@@ -18,22 +18,22 @@ brew install seqkit
 
 ## Key Subcommands
 
-| Command | Description |
-|---------|-------------|
-| `stats` | Sequence statistics (count, length, GC) |
-| `grep` | Search by name, sequence, or motif |
-| `seq` | Transform sequences (revcomp, translate, filter) |
-| `subseq` | Extract subsequences by region/BED/GTF |
-| `fx2tab` / `tab2fx` | Convert to/from tabular format |
-| `split` / `split2` | Split files by count, size, or ID |
-| `sample` | Random subsample |
-| `sort` | Sort by name, length, or sequence |
-| `rmdup` | Remove duplicate sequences |
-| `replace` | Regex find/replace in headers or sequences |
-| `convert` | Convert quality encoding (Phred33/64) |
-| `pair` | Match paired-end reads |
-| `head` / `range` | Extract first N or range of sequences |
-| `faidx` | FASTA index and random access |
+| Command             | Description                                      |
+| ------------------- | ------------------------------------------------ |
+| `stats`             | Sequence statistics (count, length, GC)          |
+| `grep`              | Search by name, sequence, or motif               |
+| `seq`               | Transform sequences (revcomp, translate, filter) |
+| `subseq`            | Extract subsequences by region/BED/GTF           |
+| `fx2tab` / `tab2fx` | Convert to/from tabular format                   |
+| `split` / `split2`  | Split files by count, size, or ID                |
+| `sample`            | Random subsample                                 |
+| `sort`              | Sort by name, length, or sequence                |
+| `rmdup`             | Remove duplicate sequences                       |
+| `replace`           | Regex find/replace in headers or sequences       |
+| `convert`           | Convert quality encoding (Phred33/64)            |
+| `pair`              | Match paired-end reads                           |
+| `head` / `range`    | Extract first N or range of sequences            |
+| `faidx`             | FASTA index and random access                    |
 
 ## Usage Examples
 
