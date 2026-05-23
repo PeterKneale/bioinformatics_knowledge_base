@@ -29,11 +29,11 @@ jobs:
       - name: Install pandoc and LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended
-      - name: Build site
-        run: mkdocs build --strict
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended fonts-dejavu
       - name: Build PDF
         run: bash scripts/build-pdf.sh
+      - name: Build site
+        run: mkdocs build --strict
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

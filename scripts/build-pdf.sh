@@ -5,7 +5,7 @@ set -euo pipefail
 # Sources page order and hierarchy from mkdocs.yml
 # Requires: pandoc, python3, a LaTeX engine (tectonic or texlive)
 
-OUTPUT="site/bioinformatics-knowledge-base.pdf"
+OUTPUT="docs/bioinformatics-knowledge-base.pdf"
 COMBINED="/tmp/bioinformatics-kb-combined.md"
 
 # Generate combined markdown with hierarchy from mkdocs.yml
@@ -26,6 +26,18 @@ else
   exit 1
 fi
 
+# Select fonts based on availability
+if fc-list : family | grep -q "DejaVu Sans Mono"; then
+  MAINFONT="DejaVu Serif"
+  SANSFONT="DejaVu Sans"
+  MONOFONT="DejaVu Sans Mono"
+else
+  # macOS fallback — these fonts support the needed Unicode characters
+  MAINFONT="Helvetica Neue"
+  SANSFONT="Helvetica Neue"
+  MONOFONT="Menlo"
+fi
+
 pandoc "$COMBINED" \
   $PDF_ENGINE \
   --metadata title="Bioinformatics Knowledge Base" \
@@ -36,6 +48,9 @@ pandoc "$COMBINED" \
   -V geometry:margin=1in \
   -V documentclass=report \
   -V colorlinks=true \
+  -V mainfont="$MAINFONT" \
+  -V sansfont="$SANSFONT" \
+  -V monofont="$MONOFONT" \
   -o "$OUTPUT"
 
 rm -f "$COMBINED"

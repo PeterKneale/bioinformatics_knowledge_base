@@ -226,7 +226,25 @@ def main():
             heading = f"# {title}"
             parts.append(heading + "\n\n" + emit_section(value, depth=2))
 
-    print("\n\n".join(parts))
+    output = "\n\n".join(parts)
+
+    # Replace Unicode characters that may not be in all fonts with ASCII equivalents
+    replacements = {
+        "→": "->",
+        "←": "<-",
+        "↓": "v",
+        "├": "|--",
+        "└": "`--",
+        "─": "-",
+        "│": "|",
+        "—": "--",
+        "–": "-",
+        "×": "x",
+    }
+    for char, replacement in replacements.items():
+        output = output.replace(char, replacement)
+
+    print(output)
 
 
 if __name__ == "__main__":
