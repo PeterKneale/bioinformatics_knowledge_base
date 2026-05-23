@@ -13,7 +13,7 @@ Stores raw sequencing reads with per-base quality scores. The standard output fo
 
 Each record consists of exactly 4 lines:
 
-```
+```text
 @SEQ_ID optional_description
 SEQUENCE
 +
@@ -22,7 +22,7 @@ QUALITY
 
 ### Example
 
-```
+```text
 @SRR001666.1 071112_SLXA-EAS1_s_7:5:1:817:345 length=72
 GGGTGATGGCCGCTGCCGATGGCGTCAAATCCCACCAAGTTACCCTTAACAACTTAAGGGTTTTCAAATAGA
 +

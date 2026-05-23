@@ -12,7 +12,7 @@ Text format for displaying dense, continuous data (coverage, conservation scores
 
 ### Fixed-Step (uniform intervals)
 
-```
+```text
 fixedStep chrom=chr1 start=1 step=10 span=10
 0.5
 0.8
@@ -24,7 +24,7 @@ All values are equally spaced. `step` = distance between values, `span` = size o
 
 ### Variable-Step (irregular positions)
 
-```
+```text
 variableStep chrom=chr1 span=10
 1000    0.5
 1050    0.8

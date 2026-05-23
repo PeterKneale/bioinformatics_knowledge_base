@@ -12,13 +12,13 @@ BED-like format for displaying continuous-valued data (genome coverage, signal i
 
 Four columns, tab-delimited:
 
-```
+```tsv
 chromA  chromStartA  chromEndA  dataValueA
 ```
 
 ### Example
 
-```
+```tsv
 chr1    0       1000    1.5
 chr1    1000    2000    3.2
 chr1    2000    2500    0.0

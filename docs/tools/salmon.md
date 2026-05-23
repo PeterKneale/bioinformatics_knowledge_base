@@ -77,7 +77,7 @@ salmon quant -i salmon_index \
 
 ## Output Format (quant.sf)
 
-```
+```tsv
 Name            Length  EffectiveLength TPM     NumReads
 ENST00000456328 1657    1458.000        12.34   100.500
 ENST00000450305 632     433.000         6.78    50.200

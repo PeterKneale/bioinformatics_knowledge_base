@@ -10,7 +10,7 @@ Simple text format for representing nucleotide or protein sequences. Used for re
 
 ## Structure
 
-```
+```text
 >SEQUENCE_ID optional description
 SEQUENCE_DATA
 SEQUENCE_DATA_CONTINUED
@@ -18,7 +18,7 @@ SEQUENCE_DATA_CONTINUED
 
 ### Example
 
-```
+```text
 >chr1 Homo sapiens chromosome 1
 NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNGATCACAGGTCTATCACCC
 TGTAACTTAAACCCTTACTTAAGCTTAAAGAAAGGGCTTGCATTTACCCTTTTG

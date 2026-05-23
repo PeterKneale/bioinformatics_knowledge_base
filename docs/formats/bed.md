@@ -12,7 +12,7 @@ Simple tab-delimited format for representing genomic intervals (regions). Used f
 
 ### Mandatory Fields (BED3)
 
-```
+```tsv
 chr1    1000    2000
 chr1    3000    4000
 chr2    5000    6000
@@ -42,7 +42,7 @@ chr2    5000    6000
 
 ### Examples
 
-```
+```tsv
 # BED3 — simple regions
 chr1    0       1000
 chr1    2000    3000

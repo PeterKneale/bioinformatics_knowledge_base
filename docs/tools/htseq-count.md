@@ -55,7 +55,7 @@ htseq-count -f bam -r pos -s no --mode intersection-strict \
 
 ## Output Format
 
-```
+```tsv
 GENE1   523
 GENE2   102
 __no_feature    14523

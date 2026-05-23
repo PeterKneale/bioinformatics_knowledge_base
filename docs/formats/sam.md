@@ -12,7 +12,7 @@ Tab-delimited text format for storing aligned sequencing reads against a referen
 
 ### Header Section (lines starting with `@`)
 
-```
+```tsv
 @HD     VN:1.6  SO:coordinate
 @SQ     SN:chr1 LN:248956422
 @SQ     SN:chr2 LN:242193529
@@ -47,7 +47,7 @@ Each line represents one read alignment with 11 mandatory fields:
 
 ### Example
 
-```
+```tsv
 @HD	VN:1.6	SO:coordinate
 @SQ	SN:chr1	LN:248956422
 read001	99	chr1	10000	60	76M	=	10200	276	ACGTACGT...	IIIIIII...	NM:i:0	MD:Z:76

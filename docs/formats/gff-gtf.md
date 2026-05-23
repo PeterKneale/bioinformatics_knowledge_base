@@ -26,7 +26,7 @@ Nine tab-delimited columns:
 
 ### GFF3 Example
 
-```
+```tsv
 chr1	ensembl	gene	11869	14409	.	+	.	ID=ENSG00000223972;Name=DDX11L1;biotype=transcribed_unprocessed_pseudogene
 chr1	ensembl	mRNA	11869	14409	.	+	.	ID=ENST00000456328;Parent=ENSG00000223972;Name=DDX11L1-201
 chr1	ensembl	exon	11869	12227	.	+	.	Parent=ENST00000456328
@@ -36,7 +36,7 @@ chr1	ensembl	exon	13221	14409	.	+	.	Parent=ENST00000456328
 
 ### GTF Example
 
-```
+```tsv
 chr1	ensembl	gene	11869	14409	.	+	.	gene_id "ENSG00000223972"; gene_name "DDX11L1";
 chr1	ensembl	transcript	11869	14409	.	+	.	gene_id "ENSG00000223972"; transcript_id "ENST00000456328";
 chr1	ensembl	exon	11869	12227	.	+	.	gene_id "ENSG00000223972"; transcript_id "ENST00000456328"; exon_number "1";

@@ -76,7 +76,7 @@ featureCounts -a annotation.gtf \
 
 ## Output Format
 
-```
+```tsv
 Geneid  Chr  Start  End  Strand  Length  sample1.bam  sample2.bam
 GENE1   chr1 1000   2000 +       1000    523          487
 GENE2   chr1 3000   4000 -       1000    102          98

@@ -58,7 +58,7 @@ kallisto quant -i transcriptome.idx \
 
 ## Output Format (abundance.tsv)
 
-```
+```tsv
 target_id       length  eff_length  est_counts  tpm
 ENST00000456328 1657    1458        100.5       12.34
 ENST00000450305 632     433         50.2        6.78

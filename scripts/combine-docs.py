@@ -89,11 +89,11 @@ def _parse_nav_items(lines: list, indent: int) -> list:
 
 def shift_headings(content: str, levels: int) -> str:
     """Shift all markdown headings down by n levels."""
-    def replacer(m):
-        hashes = m.group(1)
-        new_level = min(len(hashes) + levels, 6)
+    def replace_heading(m):
+        new_level = min(len(m.group(1)) + levels, 6)
         return "#" * new_level + m.group(2)
-    return re.sub(r"^(#{1,6})([ \t]+.*)$", replacer, content, flags=re.MULTILINE)
+
+    return re.sub(r"^(#{1,6})([ \t]+.*)$", replace_heading, content, flags=re.MULTILINE)
 
 
 def collect_page_titles(items: list) -> None:
@@ -186,7 +186,7 @@ def emit_section(items: list, depth: int) -> str:
                 h1_match = re.match(r"^#\s+(.+)", content)
                 page_title = h1_match.group(1) if h1_match else title
                 # Strip the first H1
-                content_stripped = re.sub(r"^#\s+.*\n+", "", content, count=1)
+                content_stripped = re.sub(r"^#\s+.*\n*", "", content, count=1).lstrip("\n")
                 # Page heading at depth (same level as its category)
                 page_depth = min(depth, 3)
                 heading = "#" * page_depth + f" {page_title}"

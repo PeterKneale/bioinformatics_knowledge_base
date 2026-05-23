@@ -55,7 +55,7 @@ Quick reference for which index types apply to which formats:
 
 ### Index Decision Tree
 
-```
+```text
 Is it alignment data?
 ├── BAM → .bai (or .csi for large chroms)
 ├── CRAM → .crai
@@ -85,7 +85,7 @@ Is it coverage/signal?
 
 ## Format Conversion Paths
 
-```
+```text
 FASTQ → (align) → SAM → BAM → CRAM
                             ↓
                         VCF/BCF (variant calling)

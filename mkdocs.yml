@@ -59,7 +59,7 @@ nav:
           - SeqKit: tools/seqkit.md
           - Tabix: tools/tabix.md
           - PLINK: tools/plink.md
-  - Formats:
+  - File Formats:
       - Index: formats/INDEX.md
       - Sequence: 
           - FASTA: formats/fasta.md

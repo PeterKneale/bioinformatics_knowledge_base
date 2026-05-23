@@ -59,7 +59,7 @@ blastn -query query.fa -db nt -remote -out results.txt
 
 ## Output Format 6 Columns
 
-```
+```text
 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore
 ```
 

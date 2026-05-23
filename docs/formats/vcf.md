@@ -12,7 +12,7 @@ Standard format for representing genomic variants (SNPs, indels, structural vari
 
 ### Header (lines starting with `##`)
 
-```
+```tsv
 ##fileformat=VCFv4.3
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
@@ -41,7 +41,7 @@ Standard format for representing genomic variants (SNPs, indels, structural vari
 
 ### Example
 
-```
+```tsv
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE1
 chr1	10177	rs367896724	A	AC	100	PASS	DP=50;AF=0.45	GT:DP:GQ	0/1:48:99
 chr1	10235	.	T	TA	50	PASS	DP=30;AF=0.20	GT:DP:GQ	0/0:28:85
@@ -101,7 +101,7 @@ bcftools index --tbi variants.vcf.gz    # force .tbi
 
 Extended VCF that includes non-variant (reference) blocks. Used in GATK joint genotyping workflows.
 
-```
+```tsv
 chr1	10000	.	A	<NON_REF>	.	.	END=10100	GT:DP:GQ	0/0:30:90
 chr1	10177	rs367896724	A	AC,<NON_REF>	100	.	DP=50	GT:DP:GQ	0/1:48:99
 ```
