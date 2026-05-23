@@ -44,7 +44,7 @@ pandoc "$COMBINED" \
   --metadata author="Reference Documentation for NGS Tools and File Formats" \
   --toc \
   --toc-depth=3 \
-  --syntax-highlighting=tango \
+  --highlight-style=tango \
   -V geometry:margin=1in \
   -V documentclass=report \
   -V colorlinks=true \
