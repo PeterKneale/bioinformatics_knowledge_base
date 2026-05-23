@@ -51,3 +51,7 @@ Reference pages for bioinformatics file formats, including structure, indexing o
 - [GATK Best Practices](https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows)
 - [Bioconda package repository](https://bioconda.github.io/)
 - [UCSC Genome Browser file formats](https://genome.ucsc.edu/FAQ/FAQformat.html)
+
+## Download
+
+- [Download as PDF](bioinformatics-knowledge-base.pdf)
