@@ -17,12 +17,12 @@ plugins:
 nav:
   - Home: index.md
   - Processes:
-      - Index: processes/INDEX.md
+      - Overview: processes/INDEX.md
       - Sequencing: processes/sequencing.md
       - Quality Control: processes/quality-control.md
       - Alignment: processes/alignment.md
   - Tools:
-      - Index: tools/INDEX.md
+      - Overview: tools/INDEX.md
       - Alignment:
           - BWA: tools/bwa.md
           - Bowtie2: tools/bowtie2.md
@@ -61,7 +61,7 @@ nav:
           - Tabix: tools/tabix.md
           - PLINK: tools/plink.md
   - File Formats:
-      - Index: formats/INDEX.md
+      - Overview: formats/INDEX.md
       - Sequence: 
           - FASTA: formats/fasta.md
           - FASTQ: formats/fastq.md
