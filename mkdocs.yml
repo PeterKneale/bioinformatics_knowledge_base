@@ -19,6 +19,7 @@ nav:
   - Processes:
       - Index: processes/INDEX.md
       - Sequencing: processes/sequencing.md
+      - Quality Control: processes/quality-control.md
       - Alignment: processes/alignment.md
   - Tools:
       - Index: tools/INDEX.md
