@@ -1,4 +1,4 @@
-# Bioinformatics File Formats Index
+# Bioinformatics File Formats
 
 A reference collection of file formats used in bioinformatics analysis pipelines, including indexing strategies and tool relationships.
 

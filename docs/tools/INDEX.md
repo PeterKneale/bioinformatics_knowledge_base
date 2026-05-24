@@ -1,4 +1,4 @@
-# Bioinformatics CLI Tools Index
+# Bioinformatics CLI Tools
 
 A reference collection of command-line tools used in bioinformatics analysis pipelines.
 
