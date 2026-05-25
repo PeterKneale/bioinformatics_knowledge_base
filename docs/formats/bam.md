@@ -237,9 +237,9 @@ samtools view -bs 42.1 file.bam > subsampled.bam
 | ------------------- | ---------------------- | -------------------------- |
 | Region query        | O(log n + k) — fast    | O(n) — must scan all reads |
 | Count all reads     | O(n)                   | O(n)                       |
-| Random access       | ✓ (via virtual offset) | ✗                          |
-| Streaming           | ✓                      | ✓                          |
-| Parallel by region  | ✓ (split by intervals) | ✗                          |
+| Random access       | Yes (via virtual offset) | No                          |
+| Streaming           | Yes                      | Yes                          |
+| Parallel by region  | Yes (split by intervals) | No                          |
 
 **Parallelisation pattern:** Because indexed BAMs support random access by region, many tools process chromosomes or intervals in parallel. This is how GATK's `-L` flag and scatter-gather workflows achieve parallelism.
 

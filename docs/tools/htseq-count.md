@@ -50,7 +50,7 @@ htseq-count -f bam -r pos -s no --mode intersection-strict \
 
 ## Produces
 
-- Tab-delimited count file (gene_id \t count), one gene per line
+- Tab-delimited count file (`gene_id\tcount`), one gene per line
 - Summary lines at end: `__no_feature`, `__ambiguous`, `__too_low_aQual`, `__not_aligned`, `__alignment_not_unique`
 
 ## Output Format

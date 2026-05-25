@@ -53,7 +53,7 @@ fastqc --memory 1024 reads.fastq.gz
 | `--noextract`      | Don't unzip output files                            |
 | `--nogroup`        | Disable grouping of bases for reads >50bp           |
 | `-f FORMAT`        | Force input format: fastq, bam, sam                 |
-| `--adapters FILE`  | Custom adapter file (tab: name\tsequence)           |
+| `--adapters FILE`  | Custom adapter file (tab: `name\tsequence`)         |
 | `--contaminants FILE` | Custom contaminant file                          |
 | `--limits FILE`    | Custom warn/fail thresholds for each module         |
 | `--kmers INT`      | K-mer length (default 7, max 10)                    |

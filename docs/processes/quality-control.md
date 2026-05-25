@@ -47,10 +47,10 @@ Shows the proportion of A, T, G, C at each position. In random genomic DNA, thes
 
 | Pattern                         | Interpretation                           | Concern Level |
 | ------------------------------- | ---------------------------------------- | ------------- |
-| Flat lines at ~25%              | Unbiased random library                  | ✓ Expected    |
-| Bias in first 10-15 bp          | Random hexamer priming bias (RNA-seq)    | ⚠ Normal      |
-| Strong A/T or G/C bias          | Contamination or extreme GC organism     | ✗ Investigate |
-| Repeating pattern               | Adapter/barcode sequence contamination   | ✗ Trim        |
+| Flat lines at ~25%              | Unbiased random library                  | OK - Expected    |
+| Bias in first 10-15 bp          | Random hexamer priming bias (RNA-seq)    | OK - Normal      |
+| Strong A/T or G/C bias          | Contamination or extreme GC organism     | WARN - Investigate |
+| Repeating pattern               | Adapter/barcode sequence contamination   | WARN - Trim        |
 
 #### Adapter Content
 

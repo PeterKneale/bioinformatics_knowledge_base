@@ -124,11 +124,11 @@ Scans the read from 5' to 3' with a sliding window. Once the **average quality w
 
 ```text
 Quality:  30 30 28 25 22 18 15 12 10 8
-Window=4: [30 30 28 25]=28.3 ✓
-              [30 28 25 22]=26.3 ✓
-                  [28 25 22 18]=23.3 ✓
-                      [25 22 18 15]=20.0 ✓ (if threshold=20)
-                          [22 18 15 12]=16.8 ✗ → CLIP HERE
+Window=4: [30 30 28 25]=28.3 PASS
+              [30 28 25 22]=26.3 PASS
+                  [28 25 22 18]=23.3 PASS
+                      [25 22 18 15]=20.0 PASS (if threshold=20)
+                          [22 18 15 12]=16.8 FAIL -> CLIP HERE
 Result:   30 30 28 25 22 18 15  (trailing bases removed)
 ```
 

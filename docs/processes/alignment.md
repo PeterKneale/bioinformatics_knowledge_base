@@ -24,8 +24,8 @@ Scale:   ~7.5 Gb of query sequence against ~3 Gb of reference
 | ------------------ | ------------- | ------------------ | ---------- |
 | Naive O(nm)        | ~450 ms       | ~260 days          | No         |
 | Suffix array       | ~1 μs exact   | ~50 s (exact only) | No inexact |
-| BWT + FM-index     | ~10 μs        | ~500 s             | ✓          |
-| Hash table (k-mer) | ~5 μs         | ~250 s             | ✓          |
+| BWT + FM-index     | ~10 μs        | ~500 s             | Yes        |
+| Hash table (k-mer) | ~5 μs         | ~250 s             | Yes        |
 
 The key insight: pre-build an index of the reference genome once, then query it millions of times with different reads.
 

@@ -258,11 +258,11 @@ bcftools index variants.vcf.gz   # → .csi by default
 
 | Scenario                              | Use TBI | Use CSI |
 | ------------------------------------- | ------- | ------- |
-| Human/mouse/standard genomes          | ✓       |         |
-| Plant genomes (wheat, pine, lily)     |         | ✓       |
-| Chromosomes > 512 Mb                  |         | ✓       |
-| Pangenome / concatenated references   |         | ✓       |
-| Maximum compatibility with old tools  | ✓       |         |
+| Human/mouse/standard genomes          | Yes     |         |
+| Plant genomes (wheat, pine, lily)     |         | Yes     |
+| Chromosomes > 512 Mb                  |         | Yes     |
+| Pangenome / concatenated references   |         | Yes     |
+| Maximum compatibility with old tools  | Yes     |         |
 
 ## Performance
 
